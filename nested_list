@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    dict={}
+    student=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        dict[name]=score
+    marks=dict.values()
+    marks=sorted(list(set(marks)))[1]
+    for i,v in dict.items():
+        if v==marks:
+            student.append(i)
+    student.sort()
+    for i in student:
+        print(i)
+  
